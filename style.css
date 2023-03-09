@@ -1,0 +1,101 @@
+.container, .container2 {
+    width: 90%;
+    height: 90%;
+    margin: 5%;
+    display: grid;
+    grid-template-columns: 65% 25%;
+    background-color: #f2f2f2;
+}
+.container2 {
+    grid-template-columns: 35% 65%;
+}
+.container:hover, .container2:hover {
+            background-color: #191919;
+            color: white;
+        }
+        
+        .photo-sqr {
+            width: 100%; 
+            height: auto;
+            /* display: block; */
+        }
+        .photo {
+            width: 100%;
+            height: auto;
+            display: block;
+        }
+
+        .second-photo {
+            width: 100%;
+            height: auto;
+            display: block;
+        }
+
+        .photo-content {
+            display: block;
+        }
+
+        .second-photo-content {
+            display: none;
+        }
+        
+        .container:hover> .photo-sqr > .second-photo-content {
+            display: block;
+        }
+
+        .container:hover > .photo-sqr > .photo-content {
+            display: none;
+        }
+
+        .container2:hover> .photo-sqr > .second-photo-content {
+            display: block;
+        }
+
+        .container2:hover > .photo-sqr > .photo-content {
+            display: none;
+        }
+        .img-text {
+            font-size: 35px;
+            font-weight: 600;
+            font-family: Roboto Mono;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin: auto;
+
+            transition: color 0.2s ease;
+            transition-property: color;
+            transition-duration: 0.2s;
+            transition-timing-function: ease;
+            transition-delay: 0s;
+        }
+
+.wrapper{
+    text-align: center;
+}
+
+.nav-item{
+    margin-top: 15px;
+    display: inline-block; 
+    vertical-align: top;
+}
+
+.nav-item a{
+    border-radius: 4px;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+    font-weight: 700;
+    background-color: #191919;
+}
+
+.nav-item a:hover{
+    background-color: #f02494;
+}
+
+.active{
+    background-color: #f2f2f2 !important;
+    color: black !important;
+}
